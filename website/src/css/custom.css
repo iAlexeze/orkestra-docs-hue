@@ -1,0 +1,84 @@
+/**
+ * Orkestra theme — deep purple palette overriding Docusaurus Infima blues.
+ * Primary: #6B3FA0
+ */
+
+:root {
+  --ifm-color-primary: #6B3FA0;
+  --ifm-color-primary-dark: #5f3890;
+  --ifm-color-primary-darker: #5a3588;
+  --ifm-color-primary-darkest: #4a2c70;
+  --ifm-color-primary-light: #7849ae;
+  --ifm-color-primary-lighter: #835bb6;
+  --ifm-color-primary-lightest: #a17ec9;
+
+  --orkestra-purple-50:  #f5f0fb;
+  --orkestra-purple-100: #e6d8f3;
+  --orkestra-purple-200: #c9a8e3;
+  --orkestra-purple-500: #6B3FA0;
+  --orkestra-purple-700: #4a2c70;
+  --orkestra-purple-900: #2b1842;
+
+  --ifm-font-family-base:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Helvetica Neue', sans-serif;
+  --ifm-font-family-monospace:
+    'JetBrains Mono', 'Fira Code', SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --ifm-code-font-size: 92%;
+  --ifm-heading-font-weight: 700;
+  --ifm-h1-font-size: 2.25rem;
+  --ifm-navbar-height: 60px;
+  --ifm-toc-border-color: transparent;
+  --ifm-menu-color-active: var(--orkestra-purple-500);
+  --ifm-menu-color-background-active: var(--orkestra-purple-50);
+  --ifm-link-color: var(--orkestra-purple-500);
+
+  --docusaurus-highlighted-code-line-bg: rgba(107, 63, 160, 0.12);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #a17ec9;
+  --ifm-color-primary-dark: #8e62bd;
+  --ifm-color-primary-darker: #8454b7;
+  --ifm-color-primary-darkest: #6B3FA0;
+  --ifm-color-primary-light: #b497d5;
+  --ifm-color-primary-lighter: #beaadb;
+  --ifm-color-primary-lightest: #d8c8e8;
+
+  --ifm-background-color: #14101c;
+  --ifm-menu-color-background-active: rgba(161, 126, 201, 0.12);
+
+  --docusaurus-highlighted-code-line-bg: rgba(161, 126, 201, 0.2);
+}
+
+/* Sidebar density closer to Crossplane */
+.menu {
+  font-size: 0.92rem;
+  padding: 0.75rem;
+}
+.menu__link {
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+.menu__link--active {
+  font-weight: 600;
+}
+
+/* Code block polish */
+.theme-code-block {
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+.navbar__brand { font-weight: 700; }
+
+/* TOC */
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
