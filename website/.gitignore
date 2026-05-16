@@ -1,0 +1,6 @@
+.docusaurus
+build
+node_modules
+.env.local
+.DS_Store
+sidebars.generated.js
